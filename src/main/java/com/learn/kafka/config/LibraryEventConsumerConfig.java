@@ -51,6 +51,7 @@ public class LibraryEventConsumerConfig {
         RetryTemplate retryTemplate = new RetryTemplate();
         retryTemplate.setRetryPolicy(simpleRetryPolicy());
         retryTemplate.setBackOffPolicy(fixedBackOffPolicy);
+        System.out.println("second changes");
         return retryTemplate;
     }
 

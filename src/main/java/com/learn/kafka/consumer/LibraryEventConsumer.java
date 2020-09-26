@@ -19,6 +19,7 @@ public class LibraryEventConsumer {
     public void onMessage(ConsumerRecord<Integer, String> consumerRecord) throws JsonProcessingException {
 
         log.info("ConsumerRecord :{}", consumerRecord);
+        System.out.println("second changes onmessage");
         libraryEventService.processLibraryEvent(consumerRecord);
     }
 }
