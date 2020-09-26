@@ -58,6 +58,7 @@ public class LibraryEventConsumerConfig {
 
         SimpleRetryPolicy simpleRetryPolicy = new SimpleRetryPolicy();
         simpleRetryPolicy.setMaxAttempts(3);
+        System.out.println("make some changes");
         return simpleRetryPolicy;
     }
 }
